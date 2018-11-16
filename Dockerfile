@@ -1,5 +1,3 @@
 FROM nginx
 
-RUN rm /usr/share/nginx/html/index.html
-
-COPY index.html /usr/share/nginx/html/
+RUN   echo "Hello user2!" >> /usr/share/nginx/html/index.html
